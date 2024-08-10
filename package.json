@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
+    "@sentry/nextjs": "^8.25.0",
     "appwrite": "^14.0.1",
     "chart.js": "^4.4.3",
     "class-variance-authority": "^0.7.0",
