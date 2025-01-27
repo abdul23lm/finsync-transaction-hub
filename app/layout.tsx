@@ -1,23 +1,22 @@
-export const dynamic = "force-dynamic";
+export const dynamic = 'force-dynamic'
 
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const ibmPlexSerif = IBM_Plex_Serif({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-ibm-plex-serif",
-});
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-ibm-plex-serif'
+})
 
 export const metadata: Metadata = {
-  title: "FinSync",
-  description:
-    "FinSync is your ultimate financial management tool, seamlessly syncing all your bank accounts into one platform. Gain a comprehensive view of your spending, transactions, and financial flows with ease. Streamline your finances and experience synchronization like never before with FinSync. Discover efficient financial harmony today!",
+  title: "Finsync",
+  description: "FinSync is a streamlined financial management tool that syncs multiple bank accounts in one place, offering a comprehensive view of spending, transactions, and financial flows.",
   icons: {
-    icon: "/icons/img-finsync-logo.svg",
-  },
+    icon: '/icons/logo.svg'
+  }
 };
 
 export default function RootLayout({
@@ -27,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>
-        {children}
-      </body>
+      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>{children}</body>
     </html>
   );
 }
